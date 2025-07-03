@@ -1,6 +1,6 @@
 {
   "name": "use-attract",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A lightweight React hook for creating magnetic hover effects and interactive pull animations.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
