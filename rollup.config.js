@@ -9,19 +9,23 @@ export default {
     {
       file: 'dist/index.js',
       format: 'cjs',
-      sourcemap: true,
+      sourcemap: false, // Disable source maps for smaller bundle
     },
     {
       file: 'dist/index.mjs',
       format: 'es',
-      sourcemap: true,
+      sourcemap: false, // Disable source maps for smaller bundle
     },
   ],
   plugins: [
     resolve(),
     commonjs(),
-    typescript({ declaration: true, declarationDir: 'dist' }),
-    terser(),
+    typescript({ 
+      declaration: true, 
+      declarationDir: 'dist',
+      sourceMap: false, // Disable TypeScript source maps
+    }),
+    terser(), // This should minify the code
   ],
-  external: ['react'],
+  external: ['react'], // Make sure React stays external
 };
