@@ -1,0 +1,50 @@
+{
+  "name": "use-attract",
+  "version": "1.0.3",
+  "description": "A lightweight React hook for creating magnetic hover effects and interactive pull animations.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "if exist dist rmdir /s /q dist",
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "react hook",
+    "use-attract",
+    "magnetic",
+    "hover",
+    "hover effect",
+    "attract",
+    "pull effect",
+    "animation",
+    "interactive ui",
+    "nextjs"
+  ],
+  "author": "Kevin Davis <kevin@dashdigital.io>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dashdigital-kevin/use-attract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dashdigital-kevin/use-attract/issues"
+  },
+  "homepage": "https://github.com/dashdigital-kevin/use-attract#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.0",
+    "rollup": "^4.18.0",
+    "typescript": "^5.4.5",
+    "tslib": "^2.6.2"
+  }
+}
